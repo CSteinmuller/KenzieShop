@@ -30,28 +30,28 @@ namespace KenzieAnimeShop
             //read in number of each item to be purchased
             Console.WriteLine("What would you like to purchase today ? \n");
             Console.WriteLine("Super Pepsi?");
-            Console.Write(">>");
+            Console.Write(">> ");
             popCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Fancy Pen?");
-            Console.Write(">>");
+            Console.Write(">> ");
             penCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Cool Movie?");
-            Console.Write(">>");
+            Console.Write(">> ");
             movieCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Fruity Gum?");
             Console.Write(">>");
             gumCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Candy?");
-            Console.Write(">>");
+            Console.Write(">> ");
             candyCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Harddrive?");
-            Console.Write(">>");
+            Console.Write(">> ");
             diskCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Animes?");
-            Console.Write(">>");
+            Console.Write(">> ");
             animeCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Wax (3oz)?");
-            Console.Write(">>");
+            Console.Write(">> ");
             waxCount = Int32.Parse(Console.ReadLine());
 
             //printing the recipt
