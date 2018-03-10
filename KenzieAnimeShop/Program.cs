@@ -4,11 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
-/**
- TO DO:
-    1) Fix final formatting
 
-    */
 
 namespace KenzieAnimeShop
 {
@@ -77,11 +73,12 @@ namespace KenzieAnimeShop
             total += (decimal)animeCount * 27.49m;
             Console.WriteLine("** {0,-15}{1,8}{2,11:$##0.00} **", "Wax (3oz)", waxCount, Decimal.Round(waxCount * 5.99m, 3));
             total += (decimal)waxCount * 5.99m;
+            //subtotal, tax, and total (to be variables?)
             Console.WriteLine("** ---------------------------------- **");
-            Console.WriteLine("{0,0}{1,-1}{2,1}", "**                SUBTOTAL:   $ ", total, "**");
-            Console.WriteLine("{0,0}{1,-1}{2,1}", "**               TAX (11%):   $ ", Decimal.Round(total * 0.11m, 2), " **");
+            Console.WriteLine("{0,0}{1,-1:$##0.00}{2,1}", "**                SUBTOTAL:   ", total, " **");
+            Console.WriteLine("{0,0}{1,-1:$##0.00}{2,1}", "**               TAX (11%):    ", Decimal.Round(total * 0.11m, 2), " **");
             Console.WriteLine("**                           -------- **");
-            Console.WriteLine("{0,0}{1,-1}{2,1}", " **                   TOTAL:  $", Decimal.Round(total * 1.11m, 2)," **");
+            Console.WriteLine("{0,0}{1,-1:$##0.00}{2,1}", "**                   TOTAL:   ", Decimal.Round(total * 1.11m, 2)," **");
             Console.WriteLine("****************************************");
             Console.Read();
         }
