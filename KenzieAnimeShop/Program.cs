@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
+/**
+ TO DO:
+    1) Fix final formatting
+
+    */
 
 namespace KenzieAnimeShop
 {
