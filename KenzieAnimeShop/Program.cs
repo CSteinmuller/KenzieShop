@@ -6,7 +6,7 @@ namespace KenzieAnimeShop
     {
         static void Main()
         {
-            //number of each item to be purchased
+            // Number of each item to be purchased
             int popCount;
             int candyCount;
             int penCount;
@@ -15,14 +15,14 @@ namespace KenzieAnimeShop
             int animeCount;
             int gumCount;
             int waxCount;
-            decimal total = 0; //total
+            decimal total = 0; // Total
             
-            //these could be one WriteLine but I'm trying to keep it all without side scrolling for now
+            // These could be one WriteLine but I'm trying to keep it all without side scrolling for now
             Console.WriteLine("********************************************* \n**          Welcome to the eStore!         ** \n*********************************************");
             Console.WriteLine("* Current Prices:                          ** \n* *Super Pepsi   $ 7.50 | candy     $ 9.79 ** \n* *Fancy Pen     $ 1.99 | Harddrive $89.99 **");
-            //skip an extra line here
+            // Skip an extra line here
             Console.WriteLine("* *Cool Movie    $19.99 | Animes    $27.49 ** \n* *Fruity Gum    $ 0.69 | Wax(3oz)  $ 5.99 ** \n* ******************************************** \n");
-            //read in number of each item to be purchased
+            // Read in number of each item to be purchased
 
             Console.WriteLine("What would you like to purchase today ? \n");
             Console.WriteLine("Super Pepsi?");
@@ -50,7 +50,7 @@ namespace KenzieAnimeShop
             Console.Write(">> ");
             waxCount = Int32.Parse(Console.ReadLine());
 
-            //printing the recipt
+            // Printing the recipt
             Console.WriteLine("**************************************** \n**              Receipt               **\n****************************************");
             Console.WriteLine("**    Item Name   | Count |   Total   **\n** ---------------------------------- **");
             Console.WriteLine("** {0,-15}{1,8}{2,4}{3,7:##0.00} **", "Super Pepsi", popCount, "$", Decimal.Round(popCount * 7.5m, 3));
@@ -70,14 +70,14 @@ namespace KenzieAnimeShop
             Console.WriteLine("** {0,-15}{1,8}{2,4}{3,7:##0.00} **", "Wax (3oz)", waxCount, "$", Decimal.Round(waxCount * 5.99m, 3));
             total += (decimal)waxCount * 5.99m;
 
-            //subtotal, tax, and total
+            // Subtotal, tax, and total
             Console.WriteLine("** ---------------------------------- **");
             Console.WriteLine("{0,0}{1,7:##0.00}{2,-4}", "**                SUBTOTAL:  $", total, " **");
             Console.WriteLine("{0,0}{1,7:##0.00}{2,-4}", "**               TAX (11%):  $", Decimal.Round(total * 0.11m, 2), " **");
             Console.WriteLine("**                           -------- **");
             Console.WriteLine("{0,0}{1,7:##0.00}{2,-4}", "**                   TOTAL:  $", Decimal.Round(total * 1.11m, 2)," **");
             Console.WriteLine("****************************************");
-            Console.Read(); //Does not read anything, here to prevent console from closing
+            Console.Read(); // Does not read anything, here to prevent console from closing
         }
     }
 }
