@@ -39,7 +39,7 @@ namespace KenzieAnimeShop
             Console.Write(">> ");
             movieCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Fruity Gum?");
-            Console.Write(">>");
+            Console.Write(">> ");
             gumCount = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Candy?");
             Console.Write(">> ");
